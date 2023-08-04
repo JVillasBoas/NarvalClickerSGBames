@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Narval Clicker</title>
+        <link rel="stylesheet" href="jogo.css">
+    </head>
+    <body>
+        <section id="main">
+            <div class="coluna">
+                <div class="caixa-menu">
+                    <div class="caixa-menu-conteudo">
+                        <div id="informacoes">
+                            <span class="titulo">INFORMAÇÕES</span><br>
+                            NARVS P/ CLICK: <span id="narvs-por-click">1</span><br>
+                            NARVS P/ SEGUNDO: <span id="narvs-por-segundo">0</span><br>
+                            AUTOCLICKS P/ SEGUNDO: <span id="narvs-por-autoclick">0</span><br>
+                            TOTAL DE CLICKS: <span id="total-de-clicks">0</span><br>
+                            NARVS ARRECADADOS: <span id="total-narvs">0</span><br>
+                            TOTAL DE UPGRADES: <span id="total-upgrade">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa-menu">
+                    <div class="caixa-menu-conteudo">
+                        <span class="titulo">CONQUISTAS</span><br>
+                        <div class="linha">
+                            <div id="geleira"class="conquista_1">
+                                <img class="conquistas" src="Imagens/bloqueada_conquista-removebg-preview.png">
+                            </div>
+                            <div id="dente" class="conquista_1">
+                                <img class="conquistas" src="Imagens/bloqueada_conquista-removebg-preview.png">
+                            </div>
+                        </div>
+
+                        <div class="linha">
+                            <div id="calice" class="conquista_1">
+                                <img class="conquistas" src="Imagens/bloqueada_conquista-removebg-preview.png">    
+                            </div>
+                            <div id="estrela" class="conquista_1">
+                                <img class="conquistas" src="Imagens/bloqueada_conquista-removebg-preview.png">    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="coluna">
+                <div id="placar">
+                    NARVS: <br> 
+                    <span id="pontuacao">0</span>     
+                </div>
+                <div  id="div-narval">
+                    <div id="div-seta-esquerda">
+                        <img id="seta-esquerda" src="Imagens/seta-esquerda-removebg-preview.png" draggable="false"/>
+                    </div>
+
+                    <div id="narval-id">
+                        <img id="narval" src="Imagens/narval.png" draggable="false"/>
+                    </div>
+
+                    <div id="div-seta-direita">
+                        <img id="seta-direita" src="Imagens/seta-direita-removebg-preview.png" draggable="false"/>
+                    </div> 
+                </div>
+            </div>
+            
+            <div class="coluna">
+                <div class="caixa-menu">
+                    <div class="caixa-menu-conteudo">
+                        <span class="titulo">UPGRADES</span><br>
+                        <div class="caixa-upgrade">
+                            <div class="col-icone">
+                                <img id="camarao_id" class="rotate45" src="Imagens/camarao.png"/>
+                            </div>
+                            <div class="col-texto">
+                                <span class="titulo">CAMARÃO</span>
+                                <span class="descricao">1 NARVS P/ CLICK</span>
+                                <span class="descricao">NIVEL: <span id="nivel-camarao">0</span></span>
+                            </div>
+                            <div class="col-botao">
+                                <button class="botao" id="botao-camarao">
+                                    <span id="preco-camarao">20</span><br>
+                                    NARVS
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="caixa-upgrade">
+                            <div class="col-icone">
+                                <img src="Imagens/lula.png" draggable="false"/>
+                            </div>
+                            <div class="col-texto">
+                                <span class="titulo">LULA</span>
+                                <span class="descricao">15 CLICK P/ SEGUNDO</span>
+                                <span class="descricao">NIVEL: <span id="nivel-lula">0</span></span>
+                            </div>
+                            <div class="col-botao">
+                                <button class="botao" id="botao-lula">
+                                    <span id="preco-lula">125</span><br>
+                                    NARVS
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="caixa-upgrade">
+                            <div class="col-icone">
+                                <img id="choco_id" src="Imagens/choco.png" draggable="false"/>
+                            </div>
+                            <div class="col-texto">
+                                <span class="titulo">CHOCO</span>
+                                <span class="descricao">5 AUTOCLICK P/ SEGUNDO</span>
+                                <span class="descricao">NIVEL: <span id="nivel-choco">0</span></span>
+                            </div>
+                            <div class="col-botao">
+                                <button class="botao" id="botao-choco">
+                                    <span id="preco-choco">1700</span><br>
+                                    NARVS
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="jogo.js"></script>
+    </body>
+</html>
