@@ -1,0 +1,3 @@
+Os jogos de clicar (clicker games) envolvem apontar e clicar com o mouse para comprar recompensas contínuas no jogo que facilitam o obtimento dos clickes. Neste jogo clicker, com tema
+de narval, teremos a interface dividida em: Informações (quantos clicks por segundo, clicks arrecadados ao longo do jogo), Conquistas (metas a completar enquanto joga e curiosidades sobre narvais sempre que completar uma meta, tendo como recompensa ao completar todas as metas um novo narval)
+e também um narval que pode ser clicado para obter mais cliques. É preciso mostrar quantos clicks a pessoa tem no momento e a opção de mudar as "skins" que o usuário obter. 

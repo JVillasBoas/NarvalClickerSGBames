@@ -1,0 +1,359 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    user-select: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    height: auto;
+}
+
+@font-face 
+{
+    font-family: 'rubik';
+    src: url('../fonts/RubikDistressed-Regular.ttf');
+}
+
+body 
+{
+    background-color: #5ca8e6;
+    background-image: url('../img/fundo.jpeg');
+    background-repeat: repeat-x;
+    font-family: 'rubik';
+}
+
+.rotate45 
+{
+    transform: rotate(-45deg);
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        'col1 col2 col3';
+}
+
+#coluna1 
+{
+    grid-area: col1;
+}
+
+#coluna2
+{
+    grid-area: col2;
+}
+
+#coluna3
+{
+    grid-area: col3;
+}
+
+main .coluna 
+{
+    width: 100%;
+    padding-top: 30px;
+}
+
+#placar 
+{
+    display: block;
+    margin-top: 25px;
+    font-size: 60px;
+    text-align: center;
+}
+
+#narval
+{
+    display: block;
+    width: 242px;
+    margin: 50px auto;
+    cursor: pointer;
+}
+
+#narval:hover
+{
+    transform: scale(1.1);
+}
+
+#narval:active 
+{
+    transform: scale(1);
+}
+
+#narval-prof
+{
+    display: block;
+    width: 290px;
+    margin: 40px 37px 30px 0px;
+    cursor: pointer;
+}
+
+#narval-prof:hover
+{
+    transform: scale(1.1);
+}
+
+#narval-prof:active 
+{
+    transform: scale(1);
+}
+
+#narval-3d
+{
+    display: block;
+    width: 260px;
+    margin: 28px auto;
+    cursor: pointer;
+}
+
+#narval-3d:hover
+{
+    transform: scale(1.1);
+}
+
+#narval-3d:active 
+{
+    transform: scale(1);
+}
+
+#narval-roxo
+{
+    display: block;
+    width: 260px;
+    margin: 38px auto;
+    cursor: pointer;
+}
+
+#narval-roxo:hover
+{
+    transform: scale(1.1);
+}
+
+#narval-roxo:active 
+{
+    transform: scale(1);
+}
+
+#seta-direita:hover
+{
+    transform: scale(1.1);
+}
+
+#seta-direita:active 
+{
+    transform: scale(1);
+}
+
+#seta-esquerda:hover
+{
+    transform: scale(1.1);
+}
+
+#seta-esquerda:active 
+{
+    transform: scale(1);
+}
+
+#div-narval
+{
+    display: flex;
+}
+
+#choco_id
+{
+    margin: 10px 0 0 10px;
+}
+
+#seta-esquerda, #seta-direita
+{
+    display: block;
+    margin-top: 100px;
+    width: 100px;
+    flex: 1;
+}
+
+#narval-id
+{
+    flex: 3;
+}
+
+.caixa-menu 
+{
+    position: relative;
+    background-color: rgba(215, 244, 244, 0.8);
+    margin: 10px 30px;
+    border: #82BFE0 5px solid;
+    border-radius: 24px;
+    padding: 25px 20px;
+    min-height: 100px;
+    opacity: 0.9;
+}
+
+.caixa-menu:before 
+{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    background-image: url('..img/fundo-menu.jpeg');
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+
+.caixa-menu-conteudo 
+{
+    position: relative;
+}
+
+.linha 
+{
+    display: flex;
+}
+
+.conquista_1
+{
+    display: block;
+}
+
+.conquistas
+{
+    margin: 5px 5px 10px 5px;
+    width: 180px;
+}
+
+.conquistas:hover
+{
+    transform: scale(1.1);
+}
+
+.caixa-menu-conteudo {
+    display: flex;
+    flex-direction: column;
+}
+.caixa-upgrade 
+{
+    background-color: #9CC1FF;
+    border-radius: 18px;
+    width: 100%;
+    height: 100px;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 50px 2fr auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'icone texto botao';
+    column-gap: 10px;
+
+}
+
+
+
+.col-icone 
+{
+    grid-area: icone;
+    display: flex;
+    align-items: center;
+}
+
+.col-icone img 
+{
+   width: 100%;
+}
+
+.col-texto 
+{
+    grid-area: texto;
+}
+
+.titulo 
+{
+    display: block;
+    text-align: center;
+    font-size: 28px;
+} 
+
+
+.descricao 
+{
+    color: rgb(21, 20, 22);
+    display: block;
+    text-align: center;
+}
+
+.nivel 
+{
+    padding: 3px 0;
+    font-size: 0.9rem;
+}
+
+.col-botao 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    grid-area: botao;
+}
+
+.botao 
+{
+    background-color: #F6EDA0;
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+    padding: 14px 28px;
+    cursor: pointer;
+    border: 0 none;
+    font-family: 'rubik';
+}
+
+.botao:hover 
+{
+    background-color: #e0d992;
+}
+
+@media (max-width: 1000px) {
+    main {
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: 
+            'col1 col2'
+            'col3 col3';
+    }
+    #upgrade1 {
+        flex-direction: row;
+    }
+}

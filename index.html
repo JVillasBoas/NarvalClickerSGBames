@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>Narval Clicker</title>
-        <link rel="stylesheet" href="jogo.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <section id="main">
-            <div class="coluna">
+        <main>
+            <div class="coluna" id="coluna1">
                 <div class="caixa-menu">
                     <div class="caixa-menu-conteudo">
                         <div id="informacoes">
@@ -26,59 +26,60 @@
                         <span class="titulo">CONQUISTAS</span><br>
                         <div class="linha">
                             <div id="geleira"class="conquista_1">
-                                <img class="conquistas" src="Imagens/bloqueada_conquista-removebg-preview.png">
+                                <img class="conquistas" src="img/bloqueada_conquista-removebg-preview.png">
                             </div>
                             <div id="dente" class="conquista_1">
-                                <img class="conquistas" src="Imagens/bloqueada_conquista-removebg-preview.png">
+                                <img class="conquistas" src="img/bloqueada_conquista-removebg-preview.png">
                             </div>
                         </div>
 
                         <div class="linha">
                             <div id="calice" class="conquista_1">
-                                <img class="conquistas" src="Imagens/bloqueada_conquista-removebg-preview.png">    
+                                <img class="conquistas" src="img/bloqueada_conquista-removebg-preview.png">    
                             </div>
                             <div id="estrela" class="conquista_1">
-                                <img class="conquistas" src="Imagens/bloqueada_conquista-removebg-preview.png">    
+                                <img class="conquistas" src="img/bloqueada_conquista-removebg-preview.png">    
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="coluna">
+            <div class="coluna" id="coluna2">
                 <div id="placar">
                     NARVS: <br> 
                     <span id="pontuacao">0</span>     
                 </div>
                 <div  id="div-narval">
                     <div id="div-seta-esquerda">
-                        <img id="seta-esquerda" src="Imagens/seta-esquerda-removebg-preview.png" draggable="false"/>
+                        <img id="seta-esquerda" src="img/seta-esquerda-removebg-preview.png" draggable="false"/>
                     </div>
 
                     <div id="narval-id">
-                        <img id="narval" src="Imagens/narval.png" draggable="false"/>
+                        <img id="narval" src="img/narval.png" draggable="false"/>
                     </div>
 
                     <div id="div-seta-direita">
-                        <img id="seta-direita" src="Imagens/seta-direita-removebg-preview.png" draggable="false"/>
+                        <img id="seta-direita" src="img/seta-direita-removebg-preview.png" draggable="false"/>
                     </div> 
                 </div>
             </div>
             
-            <div class="coluna">
+            <div class="coluna" id="coluna3">
                 <div class="caixa-menu">
-                    <div class="caixa-menu-conteudo">
+                    <div class="caixa-menu-conteudo" id="upgrade1">
                         <span class="titulo">UPGRADES</span><br>
+                        
                         <div class="caixa-upgrade">
                             <div class="col-icone">
-                                <img id="camarao_id" class="rotate45" src="Imagens/camarao.png"/>
+                                <img id="camarao_id" src="img/camarao.png"/>
                             </div>
                             <div class="col-texto">
                                 <span class="titulo">CAMARÃO</span>
                                 <span class="descricao">1 NARVS P/ CLICK</span>
-                                <span class="descricao">NIVEL: <span id="nivel-camarao">0</span></span>
                             </div>
                             <div class="col-botao">
+                                <span class="descricao nivel">NIVEL: <span id="nivel-camarao">0</span></span>
                                 <button class="botao" id="botao-camarao">
                                     <span id="preco-camarao">20</span><br>
                                     NARVS
@@ -88,14 +89,14 @@
                         
                         <div class="caixa-upgrade">
                             <div class="col-icone">
-                                <img src="Imagens/lula.png" draggable="false"/>
+                                <img src="img/lula.png" draggable="false"/>
                             </div>
                             <div class="col-texto">
                                 <span class="titulo">LULA</span>
-                                <span class="descricao">15 CLICK P/ SEGUNDO</span>
-                                <span class="descricao">NIVEL: <span id="nivel-lula">0</span></span>
+                                <span class="descricao">15 NARVS P/ SEGUNDO</span>
                             </div>
                             <div class="col-botao">
+                                <span class="descricao nivel">NIVEL: <span id="nivel-lula">0</span></span>
                                 <button class="botao" id="botao-lula">
                                     <span id="preco-lula">125</span><br>
                                     NARVS
@@ -105,14 +106,14 @@
 
                         <div class="caixa-upgrade">
                             <div class="col-icone">
-                                <img id="choco_id" src="Imagens/choco.png" draggable="false"/>
+                                <img src="img/choco.png" draggable="false"/>
                             </div>
                             <div class="col-texto">
                                 <span class="titulo">CHOCO</span>
-                                <span class="descricao">5 AUTOCLICK P/ SEGUNDO</span>
-                                <span class="descricao">NIVEL: <span id="nivel-choco">0</span></span>
+                                <span class="descricao">5 CLICK P/ SEGUNDO</span>
                             </div>
                             <div class="col-botao">
+                                <span class="descricao nivel">NIVEL: <span id="nivel-choco">0</span></span>
                                 <button class="botao" id="botao-choco">
                                     <span id="preco-choco">1700</span><br>
                                     NARVS
@@ -123,7 +124,7 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <script src="jogo.js"></script>
+        </main>
+        <script src="js/script.js"></script>
     </body>
 </html>
