@@ -274,17 +274,17 @@ function upgrade_clicker() {
 function tela()
 {
     document.getElementById("pontuacao").innerHTML = narvs;
-    document.getElementById("preco-camarao").innerHTML = preco_camarao;
-    document.getElementById("preco-lula").innerHTML = preco_lula;
-    document.getElementById("preco-choco").innerHTML = preco_choco;
+    document.querySelector(".preco-camarao").innerHTML = preco_camarao;
+    document.querySelector('.preco-lula').innerHTML = preco_lula;
+    document.querySelector('.preco-choco').innerHTML = preco_choco;
     document.getElementById("narvs-por-click").innerHTML = upgrade;
     document.getElementById("narvs-por-segundo").innerHTML = auto_click_s_nivel;
     document.getElementById("narvs-por-autoclick").innerHTML = auto_click_nivel;
     document.getElementById("total-de-clicks").innerHTML = total_clicks;
     document.getElementById("total-narvs").innerHTML = narvs_total;
-    document.getElementById("nivel-camarao").innerHTML = upgrade_camarao;
-    document.getElementById("nivel-lula").innerHTML = upgrade_lula;
-    document.getElementById("nivel-choco").innerHTML = upgrade_choco;
+    document.querySelector('.nivel-camarao').innerHTML = upgrade_camarao;
+    document.querySelector('.nivel-lula').innerHTML = upgrade_lula;
+    document.querySelector('.nivel-choco').innerHTML = upgrade_choco;
     upgrades_nivel = upgrade_camarao + upgrade_choco + upgrade_lula;
     document.getElementById("total-upgrade").innerHTML = upgrades_nivel;
 }
@@ -295,19 +295,19 @@ var botao_narval = document.getElementById("narval");
 botao_narval.addEventListener("click", click);
 botao_narval.addEventListener("click", clicks_total);
 
-var botao_upgrade = document.getElementById("botao-camarao");
+var botao_upgrade = document.querySelector(".botao-camarao");
 botao_upgrade.addEventListener("click", upgrades);
 
-var botao_autoclick = document.getElementById("botao-lula");
+var botao_autoclick = document.querySelector(".botao-lula");
 botao_autoclick.addEventListener("click", click_segundos);
 
-var botao_autoclick_s = document.getElementById("botao-choco");
+var botao_autoclick_s = document.querySelector(".botao-choco");
 botao_autoclick_s.addEventListener("click", upgrade_clicker);
 
-var botao_camarao = document.getElementById("camarao_id");
+var botao_camarao = document.querySelector(".camarao-id");
 botao_camarao.addEventListener("click", click_camarao_easteregg);
 
-var botao_choco = document.getElementById("choco_id");
+var botao_choco = document.querySelector(".choco-id");
 botao_choco.addEventListener("click", click_choco_easteregg);
 
 var botao_seta_direita = document.getElementById("seta-direita");

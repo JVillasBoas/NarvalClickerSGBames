@@ -1,130 +1,207 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Narval Clicker</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <main>
-            <div class="coluna" id="coluna1">
-                <div class="caixa-menu">
-                    <div class="caixa-menu-conteudo">
-                        <div id="informacoes">
-                            <span class="titulo">INFORMAÇÕES</span><br>
-                            NARVS P/ CLICK: <span id="narvs-por-click">1</span><br>
-                            NARVS P/ SEGUNDO: <span id="narvs-por-segundo">0</span><br>
-                            AUTOCLICKS P/ SEGUNDO: <span id="narvs-por-autoclick">0</span><br>
-                            TOTAL DE CLICKS: <span id="total-de-clicks">0</span><br>
-                            NARVS ARRECADADOS: <span id="total-narvs">0</span><br>
-                            TOTAL DE UPGRADES: <span id="total-upgrade">0</span>
-                        </div>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Narval Clicker</title>
+    <link rel="icon" href="img/narval.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <main>
+        <div class="coluna" id="coluna1">
+            <div class="caixa-menu">
+                <div class="caixa-menu-conteudo">
+                    <div id="informacoes">
+                        <span class="titulo">INFORMAÇÕES</span><br>
+                        NARVS P/ CLICK: <span id="narvs-por-click">1</span><br>
+                        NARVS P/ SEGUNDO: <span id="narvs-por-segundo">0</span><br>
+                        AUTOCLICKS P/ SEGUNDO: <span id="narvs-por-autoclick">0</span><br>
+                        TOTAL DE CLICKS: <span id="total-de-clicks">0</span><br>
+                        NARVS ARRECADADOS: <span id="total-narvs">0</span><br>
+                        TOTAL DE UPGRADES: <span id="total-upgrade">0</span>
                     </div>
                 </div>
-                <div class="caixa-menu">
-                    <div class="caixa-menu-conteudo">
-                        <span class="titulo">CONQUISTAS</span><br>
-                        <div class="linha">
-                            <div id="geleira"class="conquista_1">
-                                <img class="conquistas" src="img/bloqueada_conquista-removebg-preview.png">
-                            </div>
-                            <div id="dente" class="conquista_1">
-                                <img class="conquistas" src="img/bloqueada_conquista-removebg-preview.png">
-                            </div>
+            </div>
+            <div class="caixa-menu">
+                <div class="caixa-menu-conteudo">
+                    <span class="titulo">CONQUISTAS</span><br>
+                    <div class="linha">
+                        <div id="geleira" class="conquista_1">
+                            <img class="conquistas" src="img/bloqueada_conquista-removebg-preview.png">
                         </div>
+                        <div id="dente" class="conquista_1">
+                            <img class="conquistas" src="img/bloqueada_conquista-removebg-preview.png">
+                        </div>
+                    </div>
 
-                        <div class="linha">
-                            <div id="calice" class="conquista_1">
-                                <img class="conquistas" src="img/bloqueada_conquista-removebg-preview.png">    
-                            </div>
-                            <div id="estrela" class="conquista_1">
-                                <img class="conquistas" src="img/bloqueada_conquista-removebg-preview.png">    
-                            </div>
+                    <div class="linha">
+                        <div id="calice" class="conquista_1">
+                            <img class="conquistas" src="img/bloqueada_conquista-removebg-preview.png">
+                        </div>
+                        <div id="estrela" class="conquista_1">
+                            <img class="conquistas" src="img/bloqueada_conquista-removebg-preview.png">
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="coluna" id="coluna2">
-                <div id="placar">
-                    NARVS: <br> 
-                    <span id="pontuacao">0</span>     
+        </div>
+
+        <div class="coluna" id="coluna2">
+            <div id="placar">
+                NARVS: <br>
+                <span id="pontuacao">0</span>
+            </div>
+            <div id="div-narval">
+                <div id="div-seta-esquerda">
+                    <img id="seta-esquerda" src="img/seta-esquerda-removebg-preview.png" draggable="false" />
                 </div>
-                <div  id="div-narval">
-                    <div id="div-seta-esquerda">
-                        <img id="seta-esquerda" src="img/seta-esquerda-removebg-preview.png" draggable="false"/>
-                    </div>
 
-                    <div id="narval-id">
-                        <img id="narval" src="img/narval.png" draggable="false"/>
-                    </div>
+                <div id="narval-id">
+                    <img id="narval" src="img/narval.png" draggable="false" />
+                </div>
 
-                    <div id="div-seta-direita">
-                        <img id="seta-direita" src="img/seta-direita-removebg-preview.png" draggable="false"/>
-                    </div> 
+                <div id="div-seta-direita">
+                    <img id="seta-direita" src="img/seta-direita-removebg-preview.png" draggable="false" />
                 </div>
             </div>
-            
-            <div class="coluna" id="coluna3">
-                <div class="caixa-menu">
-                    <div class="caixa-menu-conteudo" id="upgrade1">
-                        <span class="titulo">UPGRADES</span><br>
-                        
-                        <div class="caixa-upgrade">
-                            <div class="col-icone">
-                                <img id="camarao_id" src="img/camarao.png"/>
-                            </div>
-                            <div class="col-texto">
-                                <span class="titulo">CAMARÃO</span>
-                                <span class="descricao">1 NARVS P/ CLICK</span>
-                            </div>
-                            <div class="col-botao">
-                                <span class="descricao nivel">NIVEL: <span id="nivel-camarao">0</span></span>
-                                <button class="botao" id="botao-camarao">
-                                    <span id="preco-camarao">20</span><br>
-                                    NARVS
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <div class="caixa-upgrade">
-                            <div class="col-icone">
-                                <img src="img/lula.png" draggable="false"/>
-                            </div>
-                            <div class="col-texto">
-                                <span class="titulo">LULA</span>
-                                <span class="descricao">15 NARVS P/ SEGUNDO</span>
-                            </div>
-                            <div class="col-botao">
-                                <span class="descricao nivel">NIVEL: <span id="nivel-lula">0</span></span>
-                                <button class="botao" id="botao-lula">
-                                    <span id="preco-lula">125</span><br>
-                                    NARVS
-                                </button>
-                            </div>
-                        </div>
+        </div>
 
-                        <div class="caixa-upgrade">
-                            <div class="col-icone">
-                                <img src="img/choco.png" draggable="false"/>
-                            </div>
-                            <div class="col-texto">
-                                <span class="titulo">CHOCO</span>
-                                <span class="descricao">5 CLICK P/ SEGUNDO</span>
-                            </div>
-                            <div class="col-botao">
-                                <span class="descricao nivel">NIVEL: <span id="nivel-choco">0</span></span>
-                                <button class="botao" id="botao-choco">
-                                    <span id="preco-choco">1700</span><br>
-                                    NARVS
-                                </button>
-                            </div>
+        <div class="coluna" id="coluna3">
+            <button class="caixa-menu" id="botao-upgrade" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Upgrades</button>
+            <div class="caixa-menu" id="caixa-desktop">
+                <div class="caixa-menu-conteudo" id="upgrade1">
+                    <span class="titulo">UPGRADES</span>
+
+                    <div class="caixa-upgrade caixa-camarao">
+                        <div class="col-icone">
+                            <img class="camarao-id" src="img/camarao.png" />
                         </div>
-                        
+                        <div class="col-texto">
+                            <span class="titulo">CAMARÃO</span>
+                            <span class="descricao">1 NARVS P/ CLICK</span>
+                        </div>
+                        <div class="col-botao">
+                            <span class="descricao nivel">NIVEL: <span class="nivel-camarao">0</span></span>
+                            <button class="botao botao-camarao">
+                                <span class="preco-camarao">20</span><br>
+                                NARVS
+                            </button>
+                        </div>
                     </div>
+
+                    <div class="caixa-upgrade caixa-lula">
+                        <div class="col-icone">
+                            <img src="img/lula.png" draggable="false" />
+                        </div>
+                        <div class="col-texto">
+                            <span class="titulo">LULA</span>
+                            <span class="descricao">15 NARVS P/ SEGUNDO</span>
+                        </div>
+                        <div class="col-botao">
+                            <span class="descricao nivel">NIVEL: <span class="nivel-lula">0</span></span>
+                            <button class="botao botao-lula">
+                                <span class="preco-lula">125</span><br>
+                                NARVS
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="caixa-upgrade botao-choco">
+                        <div class="col-icone">
+                            <img class="choco-id" src="img/choco.png" draggable="false" />
+                        </div>
+                        <div class="col-texto">
+                            <span class="titulo">CHOCO</span>
+                            <span class="descricao">5 CLICK P/ SEGUNDO</span>
+                        </div>
+                        <div class="col-botao">
+                            <span class="descricao nivel">NIVEL: <span class="nivel-choco">0</span></span>
+                            <button class="botao botao-choco">
+                                <span class="preco-choco">1700</span><br>
+                                NARVS
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </main>
-        <script src="js/script.js"></script>
-    </body>
+        </div>
+    </main>
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title titulo" id="offcanvasBottomLabel">UPGRADES</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+
+            <div class="caixa-menu-conteudo upgrade1">
+                <div class="caixa-upgrade caixa-camarao">
+                    <div class="col-icone">
+                        <img class="camarao-id" src="img/camarao.png" />
+                    </div>
+                    <div class="col-texto">
+                        <span class="titulo">CAMARÃO</span>
+                        <span class="descricao">1 NARVS P/ CLICK</span>
+                    </div>
+                    <div class="col-botao">
+                        <span class="descricao nivel">NIVEL: <span class="nivel-camarao">0</span></span>
+                        <button class="botao botao-camarao">
+                            <span class="preco-camarao">20</span><br>
+                            NARVS
+                        </button>
+                    </div>
+                </div>
+
+                <div class="caixa-upgrade caixa-lula">
+                    <div class="col-icone">
+                        <img src="img/lula.png" draggable="false" />
+                    </div>
+                    <div class="col-texto">
+                        <span class="titulo">LULA</span>
+                        <span class="descricao">15 NARVS P/ SEGUNDO</span>
+                    </div>
+                    <div class="col-botao">
+                        <span class="descricao nivel">NIVEL: <span class="nivel-lula">0</span></span>
+                        <button class="botao botao-lula">
+                            <span class="preco-lula">125</span><br>
+                            NARVS
+                        </button>
+                    </div>
+                </div>
+
+                <div class="caixa-upgrade botao-choco">
+                    <div class="col-icone">
+                        <img class="choco-id" src="img/choco.png" draggable="false" />
+                    </div>
+                    <div class="col-texto">
+                        <span class="titulo">CHOCO</span>
+                        <span class="descricao">5 CLICK P/ SEGUNDO</span>
+                    </div>
+                    <div class="col-botao">
+                        <span class="descricao nivel">NIVEL: <span class="nivel-choco">0</span></span>
+                        <button class="botao botao-choco">
+                            <span class="preco-choco">1700</span><br>
+                            NARVS
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
